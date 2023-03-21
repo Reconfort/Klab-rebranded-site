@@ -1,0 +1,82 @@
+
+
+.company-headers{ 
+    h2{
+    line-height: 0.5;
+    color: #29496c;
+    margin-left: 2rem;
+    @include mobile-l{
+        font-size: 16px;
+        margin-left: 1rem;
+        margin-top: 53px;
+    }
+}
+}
+.company-members{
+    margin: 7px 15px;
+    // margin-top: 2rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    @include mobile-l{
+        margin-left: 1rem;
+    }
+
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+        @include mobile-l{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .company-item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+        color: #010f1e;
+        .company-info-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            align-items: center;
+            margin-left: 20px;
+            }
+            .company-names{
+                display: flex;
+                flex-direction: column;
+                line-height: 0.1;
+                margin-top: -1.5rem;
+                @include mobile-l{
+                    margin-top: 0;
+                }
+
+            h4{
+                font-size: medium 10px;
+                @include mobile-l{
+                    font-size: 13px;
+                }
+            }
+            p{
+                margin-top: 0.5rem;
+                color: #A2B1C1;
+                @include mobile-l{
+                    font-size: 10px;
+                }
+            }
+            }
+            .dollar-sign{
+                color: #01512b;
+                font-weight: 600;
+                @include mobile-l{
+                    font-size: 10px;
+                }
+            }
+            .more-icon{
+                font-size: bold;
+                font-weight: 600;
+            }
+    }
+}

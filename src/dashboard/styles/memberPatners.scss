@@ -1,0 +1,70 @@
+
+.AllPatners
+{
+    background-color: white;
+    border-radius: 16px;
+}
+.partner{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  align-items: center;
+  @include mobile-l{
+    width: 100%;
+  }
+  .image {
+    border-right: 4px solid #627DA0;
+    padding-right: 30px;
+    width: 90px;
+    @include mobile-l{
+      width: 70px;
+    }
+  }
+  span{
+    line-height: 8px;
+    @include mobile-l{
+      margin-left: 15px;
+    }
+    h1{
+        color: #627DA0;
+        font-weight: 500;
+        @include mobile-l{
+          font-size: 14px;
+        }
+
+    }
+    p{
+        font-size: 14px;
+        @include mobile-l{
+          font-size: 10px;
+        }
+        label{
+            color: #132E52;
+            padding-left: 15px;
+        }
+        
+       
+        }
+    }
+  button{
+    background-color: transparent;
+    border: 1px solid #DDE8F4;
+    border-radius: 11px;
+    padding: 10px 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .icoo{
+        color: #627DA0;;
+       
+    }
+    @include mobile-l{
+      height: 35px;
+      width: 35px;
+    }
+    
+}}

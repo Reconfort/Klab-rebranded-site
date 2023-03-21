@@ -1,0 +1,117 @@
+.projects-container{
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  @include mobile-l{
+    flex-direction: column;
+  }
+  .open-projects{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    h3{
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      font-size: 18px;
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+
+  .project-card{
+  background-color: #EDF3FA;
+  width: 100%;
+  border-radius: 16px;
+  padding: 10px;
+  
+  .card-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .red{
+      background-color: red !important;
+    }
+    .blue{
+      background-color: blue !important;
+    }
+    .one{
+      background-color: #096B3B;
+      border-radius: 10px;
+      color: white;
+      height: 25px;
+      font-size: 14px;
+      padding: 2px 5px;
+      display: flex;
+      align-items: center;
+      p{
+        font-size: 12px;
+      }
+    }
+    .calender{
+      display: flex;
+      align-items: center;
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+  .paragraph{
+    margin: 15px 0;
+    p{
+      font-size: 14px;
+    }
+  }
+  .progress{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    .red{
+      background-color: red !important;
+    }
+    .blue{
+      background-color: blue !important;
+    }
+    p{
+      font-size: 12px;
+    }
+    .progress-bar{
+      background-color: white;
+      width: 75%;
+      height: 7px;
+      border-radius: 5px;
+      .progress-counter{
+        width: 70%;
+        height: 7px;
+        border-radius: 5px;
+        background-color: #096B3B;
+      }
+
+    }
+  }
+  .project-profiles{
+    display: flex;
+    flex-direction: row;
+    img{
+      width: 35px;
+      height: 35px;
+      border-radius: 100px;
+      margin-right: -10px;
+      border: 2px solid white;
+    }
+  }
+  }
+}
+
+
+
+
+
+

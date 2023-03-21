@@ -1,0 +1,222 @@
+@import "./mixinis";
+@import "./variables";
+
+.custom-side-container{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: flex-start;
+    position: fixed;
+    padding: 30px 0 20px 30px;
+    left: 0;
+    z-index: 1000;
+    @include mobile-l{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+    
+
+    ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .nav{
+    transition: ease-in-out 0.5s;
+    
+    
+    }
+    .menu-close{
+        display: none;
+    }
+
+    .sidebar-link{
+        margin-top: 20px;
+
+    }
+    
+    li{
+        border-left: 4px solid transparent;
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        // margin-top: 20px;
+        cursor: pointer;
+        /* background-color: antiquewhite; */
+        padding: 15px 60px 15px 15px;
+        color: #627DA0;
+        transition: ease-in-out 0.5s;
+        
+    }
+    
+}
+
+.logo{
+    width: 100%;
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-close{
+        display: none;
+        @include mobile-l{
+            display: block;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        @include tablet{
+            display: block;
+            
+        }
+    }
+    
+}
+}
+
+
+.container ul .nav.collapse{
+     width: 50px;
+}
+.active{
+    background-color: #F2F8FF;
+    border-left: 4px solid #373C36;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    width: 100%;
+    color: #373C36;
+    @include mobile-l{
+        border: none;
+    }
+    span{
+    color: #373C36;
+    }
+    
+
+    .side-icon{
+        filter: invert(1);
+        filter: grayscale(100%) brightness(36%);
+    }
+    img{
+        filter: invert(1);
+        filter: grayscale(100%) brightness(36%);
+    }
+
+}
+.container ul li:hover{
+    background-color: #F2F8FF;
+    /* border-left: 4px solid #373C36; */
+    border-radius: 10px 0 0 10px;
+    color: #373C36;
+    width: 100%;
+}
+.container ul li span.hide{
+    display: none;
+}
+.container ul li span.show{
+    display: none;
+}
+.container .logo{
+    width: 100%;
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.collapse .icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: ease-in-out 0.5s;
+}
+.collapse .show{
+    transition: ease-in-out 0.5s;
+    display: block;
+    /* background-color: red; */
+}
+.collapse .hide{
+    display: hidden;
+    /* background-color: blue; */
+}
+
+.sidebar-off{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: flex-start;
+    position: fixed;
+    padding: 30px 0 20px 30px;
+    left: 0;
+    z-index: 1000;
+    ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .nav{
+    transition: ease-in-out 0.5s;
+    
+    
+    }
+    .sidebar-link{
+        margin-top: 20px;
+    }
+    
+    li{
+        border-left: 4px solid transparent;
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        padding: 15px 60px 15px 15px;
+        color: #627DA0;
+        transition: ease-in-out 0.5s;
+        @include mobile-l{
+            font-size: 12px;
+        }
+        @include tablet{
+            font-size: 14px;
+        }
+    }
+}
+.logo{
+    width: 100%;
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-close{
+        display: none;
+        @include mobile-l{
+            display: block;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        @include tablet{
+            display: block;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+    }
+    
+}
+
+}

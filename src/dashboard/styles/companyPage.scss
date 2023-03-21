@@ -1,0 +1,230 @@
+.company-content {
+  margin-top: 6rem;
+  margin-left: 15rem;
+  width: 100%;
+@include mobile-l{
+      margin-top: 6rem;
+      margin-left: 0;
+    }
+    @include tablet{
+      margin-top: 6rem;
+      margin-left: 0;
+      
+    }
+}
+.companies-container{
+    background-color:white;
+    border-radius: 16px;
+    padding-right: 40px;
+    padding-left: 20px;
+    width: 100%;
+    @include tablet{
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+  .holder-info{
+       overflow-y: hidden;
+       height: 100%;
+       @include mobile-l{
+        height: 100%;
+        overflow-y: hidden;
+       }
+       @include tablet{
+        height: 100%;
+        overflow-y: hidden;
+       }
+  }
+    h2{
+      // color: #18385A;
+      padding-top: 20px;
+      padding-left: 20px;
+      font-size: 20px;
+      @include mobile-l{
+        font-size: 18px;
+      }
+    }
+    .info-company{
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: #0b2137;
+      font-size: 14px;
+      h4{
+        @include mobile-l{
+          font-size: 12px;
+        }
+      }
+     
+      h1{
+        color: #010c18;
+        line-height: 0;
+        font-size: 18px;
+        @include mobile-l{
+          font-size: 14px;
+        }
+
+      }
+      p{
+        line-height: 1;
+        margin-top: 15px;
+        @include mobile-l{
+          font-size: 11px;
+          line-height: 1.2;
+          
+        }
+      }
+      
+      .logo-co{
+      background-color:#010f1f;
+      padding: 0 10px;
+      border-radius: 100%;
+      width: 140px;
+      height: 70px;
+      color:white;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include mobile-l{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+      }
+    
+      }
+    }
+}
+.company-sider{
+  background-color: #fff;
+        height: 100vh;
+        padding: 5px 30px;
+        margin: 15px 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        width: 21%;
+        @include mobile-l{
+          display: none;
+        }
+        @include tablet{
+          display: none;
+        }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            // position: relative;
+            // padding: 10px 30px;
+            .companies-link{
+              margin: 10px 0px;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                cursor: pointer;
+                color: #627DA0;
+                font-size: 16px;
+                padding: 15px  10px;
+                span{
+                    margin: 0px 10px;
+                }
+                &:hover{
+                    background-color: #F2F8FF;
+                    // width: 177px;
+                    border-radius: 10px 0 0 10px;
+                    color: #373C36;
+                    
+                }
+            } 
+        }
+}
+.company-flex{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  @include tablet{
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .outlet{
+    background-color: #fff;
+    width: 70%;
+    color: #000;
+    border-radius: 16px;
+    margin: 15px 20px;
+    position: relative;
+    .companies-menu-icon{
+      display: none;
+      @include mobile-l{
+        display: block;
+        position: absolute;
+        font-size: 24px;
+        right: 5%;
+        top: 5%;
+        color: #18385A;
+        z-index: 1000;
+      }
+      @include tablet{
+        display: block;
+        position: absolute;
+        font-size: 24px;
+        right: 5%;
+        top: 5%;
+        color: #18385A;
+      }
+      
+    }
+    @include mobile-l{
+      width: 90%;
+      margin: 15px auto;
+    }
+    @include tablet{
+      width: 90%;
+      margin: 15px auto;
+    }
+  }
+  .comp-modal{
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 8px;
+    right: 9%;
+    top: 62%;
+    display: flex;
+    width: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
+    ul{
+      list-style-type: none;
+      .companies-link{
+       margin: 10px 0;
+      }
+      li{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                cursor: pointer;
+                color: #627DA0;
+                font-size: 16px;
+                padding: 15px  15px;
+                span{
+                    margin: 0px 10px;
+                }
+                @include mobile-l{
+                  font-size: 12px;
+                }
+                &:hover{
+                    color: #373C36;
+                }
+            } 
+    }
+  }
+
+}
+
