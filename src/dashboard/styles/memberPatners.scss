@@ -22,7 +22,8 @@
     }
   }
   span{
-    line-height: 8px;
+    line-height: 30px;
+   
     @include mobile-l{
       margin-left: 15px;
     }

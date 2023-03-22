@@ -87,7 +87,7 @@
         }
         .admin-headers{
             margin: 30px 15px;
-            line-height: 0.5;
+            line-height: 30px;
             color: #18385A;
             h2{
                 @include mobile-l{
@@ -162,7 +162,7 @@
                 .admin-names{
                     display: flex;
                     flex-direction: column;
-                    line-height: 0.1;
+                    line-height: 30px;
                     @include mobile-l{
                         width: 100%;
                     }
