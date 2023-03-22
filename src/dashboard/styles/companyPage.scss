@@ -99,12 +99,13 @@
 .company-sider{
   background-color: #fff;
         height: 100vh;
-        padding: 5px 30px;
-        margin: 15px 15px;
+        // padding: 5px 30px;
+        margin: 15px 17px;
         border-radius: 15px;
         display: flex;
         justify-content: center;
-        width: 21%;
+        width: 20%;
+        position: relative;
         @include mobile-l{
           display: none;
         }
@@ -117,9 +118,10 @@
             display: flex;
             flex-direction: column;
             width: 100%;
+            margin: 30px 0px;
+            margin-left: 25px;
             align-items: flex-start;
-            // position: relative;
-            // padding: 10px 30px;
+            position: relative;
             .companies-link{
               margin: 10px 0px;
             }
@@ -130,15 +132,18 @@
                 cursor: pointer;
                 color: #627DA0;
                 font-size: 16px;
-                padding: 15px  10px;
+                padding: 7px  10px;
                 span{
-                    margin: 0px 10px;
+                    margin: 10px;
+                    font-size: 14px;
+                    width: 100%;
+                }
+                img{
+                    color: #627DA0;
                 }
                 &:hover{
-                    background-color: #F2F8FF;
-                    // width: 177px;
                     border-radius: 10px 0 0 10px;
-                    color: #373C36;
+                    color: #373C36;;
                     
                 }
             } 
