@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/footer.css'
 import {FaFacebook, FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
+import {Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -60,7 +61,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 footerW xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 text-left gap-4 px-6 py-6">
-        <p>Klab</p>
+        <p>
+          <Link to="/admin/dashboard">Klab</Link>
+        </p>
         <div className="flex flex-row gap-2 justify-around">
           <FaFacebook />
           <FaLinkedin />
