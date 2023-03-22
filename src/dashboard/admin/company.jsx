@@ -17,6 +17,9 @@ export default function Company() {
   const handleSidebar = () => {
     setSider(!sider);
   }
+  const hideSider = () => {
+    setSider(false);
+  }
 
   return (
     <div className="wrapper">
@@ -66,21 +69,34 @@ export default function Company() {
         <div className="company-flex">
           <div className={sider ? "comp-modal" : "company-sider"}>
             <ul>
-              <NavLink to="/dashboard/companies" end className="companies-link">
+              <NavLink
+                to="/dashboard/companies"
+                end
+                className="companies-link"
+                onClick={hideSider}
+              >
                 <li>
                   {" "}
                   <HiSquares2X2 className="side-icon" />
                   <span>All Companies</span>
                 </li>
               </NavLink>
-              <NavLink to="projects" className="companies-link">
+              <NavLink
+                to="projects"
+                className="companies-link"
+                onClick={hideSider}
+              >
                 <li>
                   {" "}
                   <BsFillCheckSquareFill className="side-icon" />
                   <span>Projects</span>
                 </li>
               </NavLink>
-              <NavLink to="transactions" className="companies-link">
+              <NavLink
+                to="transactions"
+                className="companies-link"
+                onClick={hideSider}
+              >
                 <li>
                   {" "}
                   <MdOutlinePayments className="side-icon" />
@@ -91,11 +107,7 @@ export default function Company() {
           </div>
           <div className="outlet">
             <div className="companies-menu-icon">
-              <CgMenuRight className="comp-icon"
-                onClick={
-                  handleSidebar
-                }
-              />
+              <CgMenuRight className="comp-icon" onClick={handleSidebar} />
             </div>
             <Outlet />
           </div>

@@ -5,14 +5,23 @@ import Trainers from "../assets/website/icons/trainers.svg";
 import Alumni from "../assets/website/icons/alumni.svg";
 import Trainees from "../assets/website/icons/trainee.svg";
 import { Outlet, NavLink } from "react-router-dom";
+import {CgMenuRight} from "react-icons/cg";
+import {useState} from "react";
 
 const Members = () => {
+  const [sider, setSider] = useState(false);
+
+  const handleSider = () => {
+    setSider(!sider);
+  }
+  
+
   return (
     <div className="wrapper">
       <Outline />
       <section className="members-content">
         <div className="members-container">
-          <div className="members-sider">
+          <div className={sider? "members-modal" : "members-sider"}>
             <ul>
               <NavLink to="/dashboard/members" end className="members-link">
                 <li>
@@ -45,6 +54,7 @@ const Members = () => {
             </ul>
           </div>
           <div className="outlet">
+              <CgMenuRight className="members-menu-icon" onClick={handleSider} />
             <Outlet />
           </div>
         </div>
