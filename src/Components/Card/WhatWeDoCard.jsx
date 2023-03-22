@@ -3,7 +3,7 @@ import { FaAccusoft } from 'react-icons/fa'
 
 const WhatWeDoCard = () => {
   return (
-    <div className="p-6 w-full rounded-3xl flex flex-col justify-start items-center pt-10 text-center border-t border-slate-700 shadow-md shadow-slate-50 scale-95 hover:scale-100 hover:bg-slate-100">
+    <div className="p-6 w-full rounded-3xl flex flex-col justify-start items-center pt-10 text-center border-t border-slate-700 shadow-md duration-500 shadow-slate-50 scale-95 hover:scale-100 hover:bg-slate-100">
       <div className=" bg-white border border-slate-700 absolute -mt-20 rounded-3xl p-6 rotate-45">
         <FaAccusoft className=" text-5xl -rotate-45" />
       </div>

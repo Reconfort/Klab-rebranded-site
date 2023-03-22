@@ -27,6 +27,8 @@ import ParentPage from "./dashboard/admin/ParentPage";
 import Payments from "./dashboard/admin/Payments";
 import CompaniesPayment from "./dashboard/admin/payments/CompaniesPayment";
 import ParentsPayment from "./dashboard/admin/payments/ParentsPayment";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/community" element={<Community />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/account" element={<Login />} />
+          <Route path="/SignUp" element={<Register />} />
 
           <Route
             path="/admin/dashboard"
