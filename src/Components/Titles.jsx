@@ -1,5 +1,5 @@
 import React from 'react'
-import LineImg from '../Assets/Vector.svg'
+import LineImg from '../assets/Vector.svg'
 
 const Titles = () => {
   return (

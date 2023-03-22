@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../Assets/CardImage.jpg'
+import Image from '../../assets/CardImage.jpg'
 import { FaDotCircle, FaLocationArrow } from 'react-icons/fa';
 
 const CommunityCard = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../Assets/profile.jpeg'
+import Profile from '../assets/profile.jpeg'
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 
 const RightTestimony = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Map from '../Assets/map3.png'
+import Map from '../assets/map3.png'
 
 const LeftContact = () => {
   return (

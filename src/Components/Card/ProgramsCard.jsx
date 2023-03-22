@@ -1,5 +1,5 @@
 import React from 'react'
-import Image1 from '../../Assets/CardImage.jpg'
+import Image1 from '../../assets/CardImage.jpg'
 import { FaArrowRight } from 'react-icons/fa'
 
 const ProgramsCard = () => {

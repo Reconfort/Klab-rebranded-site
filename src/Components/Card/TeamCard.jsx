@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../Assets/TeamImg.jpg'
+import Image from '../../assets/TeamImg.jpg'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import '../styles/teamCard.css'
 

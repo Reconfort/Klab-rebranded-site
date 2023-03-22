@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../../Assets/Background.png'
+import Image from '../../../assets/Background.png'
 
 const Info = () => {
     return (

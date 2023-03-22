@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../Assets/IctChamber.png'
+import img from '../../assets/IctChamber.png'
 
 const PatnerCard = () => {
   return (
