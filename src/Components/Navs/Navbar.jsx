@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Navbar.css'
-import Logo from '../../Assets/Logo.png'
+import Logo from '../../assets/Logo.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
