@@ -55,9 +55,7 @@
     }
    
 }
-.profile span{
 
-}
 .header .profile span p{
     margin-top: -5px;
     @include mobile-l {
@@ -77,6 +75,7 @@
     position: absolute;
     right: 5%;
     width: 50px;
+    height: 50px;
     }
     @include tablet{
         position: absolute;
@@ -155,11 +154,13 @@
         width: 100%;
         position: absolute;
         left: 10%;
+        top: 18px;
+
     }  
     @include mobile-l{
         width: 100%;
         position: absolute;
-        top: 5px;
+        top: 17px;
         left: 15%;
     }
 }

@@ -122,7 +122,8 @@
   color: #18385a;
   display: flex;
   flex-direction: column;
-  line-height: 0.5;
+  margin-top: 20px;
+  margin-bottom: 5px;
 
   p {
     font-size: 14px;
@@ -138,15 +139,16 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    top: 55px;
+    top: 20px;
     left: 30%;
     @include mobile-l{
-      width: 80%;
-      position: absolute;
-      display: flex;
-      justify-content: flex-end;
-      top: 50px;
-      left: 20%;
+      display: none;
+      // width: 80%;
+      // position: absolute;
+      // display: flex;
+      // justify-content: flex-end;
+      // top: 20px;
+      // left: 15%;
     }
     p {
       margin: 0 15px;
@@ -165,6 +167,7 @@
     border-radius: 15px;
     th{
       padding: 10px;
+      text-align: left;
       @include mobile-l{
         font-size: 14px;
       }
