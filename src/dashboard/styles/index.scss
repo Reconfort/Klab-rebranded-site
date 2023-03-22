@@ -120,9 +120,7 @@
                 font-size: 12px;
             }
             p{
-                margin-top: -15px;
                 font-size: 11px;
-                
             }
         }
         .user{
@@ -137,6 +135,10 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 10px;
+            h4,p{
+                font-size: 14px;
+            }
         }
         button{
             width: 100%;
