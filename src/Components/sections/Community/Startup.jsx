@@ -1,7 +1,7 @@
 import React from 'react'
-import Team from '../../../Assets/Groups.png'
+import Team from '../../../assets/Groups.png'
 import '../../styles/community.css'
-import LeftStartup from './LeftStartup';
+import LeftStartup from './LeftStartup'
 
 const Startup = () => {
   return (
