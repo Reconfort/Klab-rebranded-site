@@ -83,6 +83,25 @@
                 width: 90%;
                 margin: 0 auto;
             }
+            .members-menu-icon{
+                display: none;
+                @include mobile-l{
+                    display: block;
+                    font-size: 24px;
+                    margin-left: 90%;
+                    margin-top: 20px;
+                    color: #18385A;
+                    z-index: 1000;
+                }
+                @include tablet{
+                    display: block;
+                    font-size: 24px;
+                    margin-left: 19rem;
+                    margin-top: 20px;
+                    color: #18385A;
+                    z-index: 1000;
+                }
+            }
         }
         .admin-headers{
             margin: 30px 15px;
@@ -195,5 +214,42 @@
                     
                 }
             }
+        }
+
+        .members-modal{
+            position: absolute;
+            z-index: 1000;
+            background-color: white;
+            border-radius: 8px;
+            right: 5%;
+            top: 24%;
+            display: flex;
+            width: 50%;
+            padding: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.10);
+            ul{
+                list-style-type: none;
+                .companies-link{
+                margin: 10px 0;
+                }
+                li{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    cursor: pointer;
+                    color: #627DA0;
+                    font-size: 16px;
+                    padding: 15px  15px;
+                    span{
+                        margin: 0px 10px;
+                        }
+                        @include mobile-l{
+                        font-size: 12px;
+                        }
+                        &:hover{
+                        color: #373C36;
+                        }
+                } 
+                }
         }
 }
