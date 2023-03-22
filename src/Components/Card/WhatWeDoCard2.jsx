@@ -3,7 +3,7 @@ import { FaFigma } from 'react-icons/fa'
 
 const WhatWeDoCard2 = () => {
   return (
-    <div className="bg-slate-100 rounded-3xl p-4 group flex flex-col justify-start gap-4 scale-95 hover:scale-100 h-auto">
+    <div className="bg-slate-100 rounded-3xl p-4 group flex flex-col duration-500 justify-start gap-4 scale-95 hover:scale-100 h-auto">
       <div className="border border-slate-700 p-4 rounded-2xl w-14 h-14 flex justify-center items-center group-hover:bg-slate-700 group-hover:text-slate-50 scale-100 group-hover:scale-110">
         <FaFigma className=" text-2xl" />
       </div>

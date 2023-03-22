@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link to="/community">Community</Link>
         <Link to="/events">Events</Link>
       </ul>
-      <Link to="/create-account">
+      <Link to="/account">
         <button className="bg-slate-800 px-5 text-sm font-semibold py-2 text-slate-50 rounded-2xl hidden xl:flex lg:flex md:flex sm:hidden">
           Signup
         </button>
